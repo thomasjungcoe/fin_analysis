@@ -16,3 +16,11 @@
 
 06_fa = pulling multiple tickers in daily time frame
   create a file with tickers to be given as an input to be pulled
+
+07_fa = pulling multiple tickers in weekly time frame
+
+08_fa = pulling multiple tickers in monthly time frame
+
+09_fa = pulling multiple tickers in quarterly time frame
+
+10_fa = 
