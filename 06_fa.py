@@ -11,11 +11,9 @@ def download_data(symbol, start_date, end_date, output_dir):
 
 def main():
     parser = argparse.ArgumentParser()
-    # parser.add_argument("--symbol", required=True, help="Symbol to download data for")
     parser.add_argument("--ticker-file", required=True, help="File containing list of tickers")
     parser.add_argument("--start-date", required=True, help="Start datae in YYYY-MM-DD format")
     parser.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format")
-    # parser.add_argument("--output", default="C:/Users/thoma/Desktop/fin_analysis/data", help="Path to output CSV file")
     parser.add_argument("--output-dir", default=".", help="Directory to save output CSV files")
     args = parser.parse_args()
 
@@ -23,7 +21,6 @@ def main():
         tickers = [line.strip() for line in f]
 
     for ticker in tickers:
-        # download_data(args.symbol, args.start_date, args.end_date)
         download_data(ticker, args.start_date, args.end_date, args.output_dir)
 
 

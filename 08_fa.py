@@ -3,7 +3,9 @@ import yfinance as yf
 import os
 
 def download_data(symbol, start_date, end_date, output_dir):
-    data = yf.download(symbol, start=start_date, end=end_date, interval= "1mo")
+    data = yf.download(symbol, start=start_date, end=end_date, interval= "1D")
+    data = data.resample('MS').first()
+    data = data.bfill()
     data = data.drop(['Volume'], axis=1)
     data.to_csv(os.path.join(output_dir, f'US-{symbol}-M.csv'))
 

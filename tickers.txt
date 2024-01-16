@@ -1,2 +1,2 @@
-SPY
-QQQ
+ES=F
+NQ=F

@@ -23,4 +23,4 @@
 
 09_fa = pulling multiple tickers in quarterly time frame
 
-10_fa = 
+10_fa = build a script that uses the subprocess module to run daily, weekly, month, and quarterly scripts.
