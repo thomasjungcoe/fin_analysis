@@ -15,7 +15,6 @@ def main():
     parser.add_argument("--output", default="C:/Users/thoma/Desktop/fin_analysis/data", help="Path to output CSV file")
     args = parser.parse_args()
 
-
     data = download_data(args.symbol, args.start_date, args.end_date)
     data.to_csv(args.output)
 
