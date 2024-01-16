@@ -4,6 +4,12 @@
   adjusting data to only collect the data I want.
     DATE, OPEN, HIGH, LOW, CLOSE
 
-03_fa = weekly data
+03_fa = weekly data pull
   pull the weekly data and leave out the volume
-  
+
+
+04_fa = monthly data pull
+  pull the monthly data and leave out the volume
+
+05_fa = quarterly data pull
+  pull the quarterly data and leave out the volume
